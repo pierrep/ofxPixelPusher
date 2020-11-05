@@ -76,8 +76,8 @@ namespace ofxPixelPusher {
 		std::vector<unsigned char> mPacket;
         std::string mMacAddress;
         std::string mIpAddress;
-        short mSoftwareVersion;
-        short mHardwareVersion;
+        float mSoftwareVersion;
+        float mHardwareVersion;
 		short mPort;
 		short mStripsAttached;
 		short mMaxStripsPerPacket;

@@ -9,7 +9,6 @@
 
 namespace ofxPixelPusher {
 
-	//forward declare Strip so I don't get a Pixel<->Strip interdependency
 	class Strip; 
 
 	class Pixel {
@@ -48,6 +47,7 @@ namespace ofxPixelPusher {
 		void setManualCorrection(float red, float green, float blue);
 		void setColorTemperature(ColorTemperature temperature);
 		void setColorCorrection(ColorCorrection correction);
+
 	protected:
 		void calculateCorrection();
 		ColorTemperature mColorTemperature;

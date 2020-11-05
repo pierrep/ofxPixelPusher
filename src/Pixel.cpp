@@ -31,6 +31,7 @@ Pixel::Pixel(unsigned char r, unsigned char g, unsigned char b) {
 	mBlue = b;
 	mOrange = 0;
 	mWhite = 0;
+    mCorrection[0] = mCorrection[1] = mCorrection[2] = 0;
 	setColorCorrection(ColorCorrection::UNCORRECTED);
 	setColorTemperature(ColorTemperature::UNCORRECTED_TEMPERATURE);
 }
