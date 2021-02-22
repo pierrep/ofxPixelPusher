@@ -11,6 +11,7 @@
 #include <vector>
 #include <string>
 #include "Pixel.h"
+#include "ofGraphics.h"
 
 namespace ofxPixelPusher {
 	enum StripType {
@@ -31,6 +32,7 @@ namespace ofxPixelPusher {
 		//void setPixels(unsigned char r, unsigned char g, unsigned char b, unsigned char o, unsigned char w);
 		void setPixels(std::vector<std::shared_ptr<Pixel> > p);
 		void setPixel(int position, unsigned char r, unsigned char g, unsigned char b);
+        void setPixel(int position, ofColor c);
 		void setPixelHSB(int position, float hue, float saturation, float brightness);
 		//void setPixel(int position, unsigned char r, unsigned char g, unsigned char b, unsigned char o, unsigned char w);
 		void setPixel(int position, std::shared_ptr<Pixel> pixel);

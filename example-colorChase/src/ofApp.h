@@ -21,7 +21,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		std::shared_ptr<ofxPixelPusher::DiscoveryService> mDiscoveryService;
+        //std::shared_ptr<ofxPixelPusher::DiscoveryService> mDiscoveryService;
+        ofxPixelPusher::DiscoveryService* mDiscoveryService;
 		int mStartingHue;
 		int mIndex;
 };

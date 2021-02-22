@@ -68,6 +68,16 @@ void Strip::setPixel(int position, unsigned char r, unsigned char g, unsigned ch
 	}
 }
 
+void Strip::setPixel(int position, ofColor c) {
+    if (position < mPixels.size()) {
+        mPixels[position]->setColor(c.r, c.g, c.b);
+        mTouched = true;
+    }
+    else {
+        std::printf("Strip::setPixel ERROR -- Invalid pixel number %d.\n", position);
+    }
+}
+
 void Strip::setPixelHSB(int position, float hue, float saturation, float brightness) {
 	if (position < mPixels.size()) {
 		mPixels[position]->setColorHSB(hue, saturation, brightness);
